@@ -1,0 +1,10 @@
+name: Farming-Plugin
+version: '${project.version}'
+main: com.noahnewmanmack.farmingplugin.FarmingPlugin
+api-version: 1.18
+authors: [ NoahMack ]
+description: Modifies the interaction between player and harvestable crops.
+commands:
+  set-trample:
+    description: sets the trampler permissions of the player.
+    usage: /<command>

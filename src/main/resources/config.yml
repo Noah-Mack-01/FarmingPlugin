@@ -1,0 +1,7 @@
+group:
+  Moderator:
+    permissions:
+     - trampler.setTrample
+  NoTrample:
+    permissions:
+     - tramepler.noTrample
