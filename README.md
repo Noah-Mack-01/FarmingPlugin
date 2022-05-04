@@ -18,7 +18,7 @@ The Yields all return a minimum of one seed. The yields are returned via a rando
 Crops follow a similar process, though not random and instead a fixed amount.
 
 ### Glitch Prevention
-The plugin prevents breaking the block below a crop, exploding it with TNT or using Pistons to displace crops.
+The plugin prevents breaking the block below a crop, exploding it with TNT or using Pistons to displace crops, mob trampling, water and lava, as well as creeper griefing.
 
 ### Commands
 The plugin has two custom permissions - non-trampler and moderator. A moderator may assign or remove the trampler permission from a given player.

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Farming_Plugin_2.0:jar">
+    <output-path>$USER_HOME$/Server/plugins</output-path>
+    <root id="archive" name="Farming_Plugin_2.0.jar">
+      <element id="module-output" name="Farming_Plugin_2.0" />
+    </root>
+  </artifact>
+</component>

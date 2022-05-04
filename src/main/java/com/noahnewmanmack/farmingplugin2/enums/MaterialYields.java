@@ -1,4 +1,4 @@
-package com.noahnewmanmack.farmingplugin.utils;
+package com.noahnewmanmack.farmingplugin2.enums;
 
 import org.bukkit.Material;
 
@@ -6,15 +6,16 @@ import org.bukkit.Material;
  * Enumerator with the Materials being harvested, their respective crop and seed yields.
  */
 public enum MaterialYields {
-  PUMPKIN(Material.PUMPKIN, Material.BARRIER, Material.PUMPKIN),
-  PUMPKIN_STEM(Material.PUMPKIN_STEM, Material.PUMPKIN_SEEDS, Material.BARRIER),
-  MELON_STEM(Material.MELON_STEM, Material.MELON_SEEDS, Material.BARRIER),
-  MELON(Material.MELON, Material.MELON_SLICE, Material.BARRIER),
+
+  PUMPKIN(Material.PUMPKIN, null, Material.PUMPKIN),
+  PUMPKIN_STEM(Material.PUMPKIN_STEM, Material.PUMPKIN_SEEDS, null),
+  MELON_STEM(Material.MELON_STEM, Material.MELON_SEEDS, null),
+  MELON(Material.MELON, Material.MELON_SLICE, null),
   WHEAT(Material.WHEAT, Material.WHEAT_SEEDS, Material.WHEAT),
-  CARROT(Material.CARROTS, Material.CARROT, Material.BARRIER),
-  POTATO(Material.POTATOES, Material.POTATO, Material.BARRIER),
+  CARROT(Material.CARROTS, Material.CARROT, null),
+  POTATO(Material.POTATOES, Material.POTATO, null),
   BEETROOT(Material.BEETROOTS, Material.BEETROOT_SEEDS, Material.BEETROOT),
-  COCOA(Material.COCOA, Material.COCOA_BEANS, Material.BARRIER);
+  COCOA(Material.COCOA, Material.COCOA_BEANS, null);
 
 
   public final Material type;
@@ -27,5 +28,6 @@ public enum MaterialYields {
     this.type = type;
     this.seedOutput = seedOutput;
   }
+
 
 }
