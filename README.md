@@ -21,6 +21,6 @@ Crops follow a similar process, though not random and instead a fixed amount.
 The plugin prevents breaking the block below a crop, exploding it with TNT or using Pistons to displace crops, mob trampling, water and lava, as well as creeper griefing.
 
 ### Commands
-The plugin has two custom permissions - non-trampler and moderator. A moderator may assign or remove the trampler permission from a given player.
+Plugin can write to a yml file that, if a username is contained within, prevents trampling of crops via a listener.
 
 
