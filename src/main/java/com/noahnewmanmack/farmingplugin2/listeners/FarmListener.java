@@ -90,6 +90,11 @@ public class FarmListener implements Listener {
       event.getPlayer().getServer().getConsoleSender().sendMessage("Setting to Air!");
       Random ran = new Random();
 
+      int mult = 1;
+      if (itemInUse.getItemMeta().hasEnchant(Enchantment.LOOT_BONUS_BLOCKS)) {
+        mult = itemInUse.getEnchantmentLevel(Enchantment.LOOT_BONUS_BLOCKS);
+      }
+
       ItemStack drop;
       //set dropb
       drop = new ItemStack(materialYield.seedOutput,
@@ -100,7 +105,7 @@ public class FarmListener implements Listener {
       event.getPlayer().getWorld().dropItem(event.getBlock().getLocation(), drop);
 
       // set drop
-      drop = new ItemStack(materialYield.cropOutput, yieldTier.cropYield);
+      drop = new ItemStack(materialYield.cropOutput, yieldTier.cropYield * mult);
 
       //drop crop output
       event.getPlayer().getWorld().dropItem(event.getBlock().getLocation(), drop);
