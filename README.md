@@ -2,9 +2,6 @@
 FarmingPlugin is a Minecraft Java Edition Plugin designed to add new yield generation for farming.
 It replaces the current standard break-and-receive structure, adds a qualifier of having broken with a hoe, and returns inputs depending upon its contents. 
 
-## Dependencies
-The plugin depends on the LuckPerms plugin for permissions.
-
 ##Usage
 The plugin contains event listeners for crop yield, as well as for attempted workaround prevention.
 It contains permission commands which check for moderator status to add an additional permission disabling or enabling crop trampling upon jumping.
